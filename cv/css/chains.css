@@ -1,0 +1,110 @@
+.chainsleft{
+    position: fixed;
+    left: -4vw;
+    top: 1vh;
+    transform: rotateZ(-61.5deg);
+}
+
+.chainsleft img:nth-child(1), .chainsright img:nth-child(1){
+    animation: animat1 6s linear infinite;    
+}
+
+.chainsleft img:nth-child(2), .chainsright img:nth-child(2){
+    top: 9vh;
+    animation: animat2 6s linear infinite;
+}
+
+.chainsleft img:nth-child(3), .chainsright img:nth-child(3){
+    top: 17vh;
+    animation: animat3 6s linear infinite;
+}
+
+.chainsleft img:nth-child(4), .chainsright img:nth-child(4){
+    top: 25vh;
+    animation: animat4 6s linear infinite;
+}
+
+.chainsleft img:nth-child(5), .chainsright img:nth-child(5){
+    top: 33vh;
+    animation: animat5 6s linear infinite;
+}
+
+.chainsleft img:nth-child(6), .chainsright img:nth-child(6){
+    top: 41vh;
+    animation: animat6 6s linear infinite;
+}
+
+.chainsleft img:nth-child(7), .chainsright img:nth-child(7){
+    top: 49vh;
+    animation: animat7 6s linear infinite;
+}
+
+.chainsleft img:nth-child(8), .chainsright img:nth-child(8){
+    top: 57vh;
+    animation: animat8 6s linear infinite;
+}
+
+.chainsright{
+    position: fixed;
+    left: 102vw;
+    top: -5vh;
+    transform: rotateZ(61.5deg);
+}
+
+.orientchainleft, .orientchainright{
+    position: absolute;
+    width: 4vw;
+    height: 8vw;
+}
+
+@keyframes animat2{
+    0%{}
+    25%{transform: rotateZ(31.5deg);}
+    50%{transform: rotateZ(-31.5deg);}
+    100%{}
+}
+@keyframes animat3{
+    0%{}
+    25%{transform: rotateZ(-31.5deg);}
+    50%{transform: rotateZ(31.5deg);}
+    100%{}
+}
+
+@keyframes animat4{
+    0%{}
+    25%{transform: rotateZ(31.5deg);}
+    50%{transform: rotateZ(-31.5deg);}
+    100%{}
+}
+@keyframes animat5{
+    0%{}
+    25%{transform: rotateZ(-31.5deg);}
+    50%{transform: rotateZ(31.5deg);}
+    100%{}
+}
+
+@keyframes animat6{
+    0%{}
+    25%{transform: rotateZ(31.5deg);}
+    50%{transform: rotateZ(-31.5deg);}
+    100%{}
+}
+@keyframes animat7{
+    0%{}
+    25%{transform: rotateZ(-31.5deg);}
+    50%{transform: rotateZ(31.5deg);}
+    100%{}
+}
+
+@keyframes animat8{
+    0%{}
+    25%{transform: rotateZ(31.5deg);}
+    50%{transform: rotateZ(-31.5deg);}
+    100%{}
+}
+@keyframes animat1{
+    0%{}
+    25%{transform: rotateZ(-31.5deg);}
+    50%{transform: rotateZ(31.5deg);}
+    100%{}
+}

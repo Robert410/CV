@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="css/chains.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/cardtabs.css">
+    <link rel="stylesheet" href="css/massmedia.css">
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="css/horizontal.css">
+    <link rel="stylesheet" href="css/rotating.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/popups/popupvolunteering.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/popups/popuppersonal.css">
+    <link rel="stylesheet" href="css/popups/popupdegrees.css">
+    <script src="js/mainjs.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/cardtabs.js"></script>
+</head>
+<body style="background: bisque;">
+    <!-- <div class="chainsleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+        <img src="imagini/CHAIN.png" class="orientchainleft">
+    </div>
+    <div class="chainsright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+        <img src="imagini/CHAIN.png" class="orientchainright">
+    </div> -->
+    <div id="openall" style="opacity: 0;">
+    <div class="mid">
+        <div class="myp                                    to">
+            <img src="imagini/myphoto.jpg" alt="" class="imagpositioning">
+        </div>
+        <div class="midtxt">
+          <div class="aboutme">
+            <img src="imagini/icons/icon-contact.png" alt="" class="icons">
+            <h1>Hoștiuc Robert-Gabriel</h1>
+            <p>04/10/2001 - Suceava</p>
+            </div>
+            <div class="contactme">
+              <img src="imagini/icons/icon-phone.png" alt="" class="icons">
+              <h1>0754384708</h1>
+            </div>
+          <div class="contactme">
+            <img src="imagini/icons/icon-message.png" alt="" class="icons">
+            <h1>roberthostiuc@gmail.com</h1>
+          </div>
+        </div>
+        <div class="massmedia">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/roberth410/" target="blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-facebook" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/roberthostiuc/?hl=ro" target="blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-instagram" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+        </div>   
+    </div>
+    <div class="popuppersonalinf">
+      <a class="popupinpersonal" href="#popuppersonal" onclick="showquestion()">Personal information</a>
+      <div class="popuppersonal" id="popuppersonal">
+        <div class="popup-innerpersonal">
+          <div class="navbarpersonal">
+            <div class="buttonnavbar">
+            <div class="statusbutton" id="statusbuttoneducation"></div>
+            <button onclick="changeinformationtoeducation()">Education and training </button>
+          </div>
+          <div class="buttonnavbar">
+            <div class="statusbutton" id="statusbuttonskills"></div>
+            <button onclick="changeinformationtoskills()">Language & Digital skills</button>
+            </div>
+            <div class="buttonnavbar">
+              <div class="statusbutton" id="statusbuttonMe"></div>
+            <button onclick="changeinformationtoMe()">About me</button>
+            </div>
+          </div>
+          <div class="bktxtpersonal" id="txteducation">
+          <div class="txteducation">
+            <div class="part1">
+            <h1>Education</h1>
+            <h2>High School Diploma</h2>
+            <p style="color: gray; text-decoration: underline;">Colegiul National "Stefan cel Mare"</p>
+            <p>11/09/2016 – 15/06/2020</p>
+            <p>Suceava - Romania</p>
+            <h2>College Diploma</h2>
+            <p style="color: gray; text-decoration: underline;">Ștefan cel Mare University</p>
+            <p>01/10/2020 - ongoing</p>
+            <p>Suceava - Romania</p>
+          </div>
+            <hr style="border: 0.5vh solid #ec5b6c; margin-left: 5vh; margin-right: 0; transform: skew(-30deg);">
+            <div class="part2">
+                  <h2>About training</h2>
+                  <p>My skills Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quas vitae neque incidunt temporibus quia repellendus aut earum nihil nemo eaque eius facilis nulla, porro, perspiciatis atque repudiandae ut ipsam?</p>
+            </div>
+            </div>
+          </div>
+          <div class="bktxtpersonal" id="txtlanguage">
+          <div class="txtlanguage" >
+            <div class="part1">
+              <h1>Language skills</h1>
+              <h2>Mother tongue:</h2>
+              <p class="englishword"><i>- Romanian -</i></p>
+              <h2 style="margin-top: 2.5vh;">Other language</h2>
+              <p class="englishword"><i>- English -</i></p>
+              <p class="results">Reading - C1</p>
+              <p class="results" style="left: 6.5vw;">Listening - B2</p>
+              <p class="results" style="top: 45vh;">Writing - C1</p>
+              <p class="results" style="left: 6.5vw;top: 45vh;">Speaking - C1</p>
+              <div class="progressbar">
+                <div class="fillbar" id="progressbar"></div>
+              </div>
+              <div class="progressbar" style="top: 49vh;">
+                <div class="fillbar" id="progressbar"></div>
+              </div>
+              <div class="progressbar" style="left: 15vw; top: 41vh;">
+                <div class="fillbar"  style="width: 75%;" id="progressbar"></div>
+              </div>
+              <div class="progressbar" style="left: 15vw; top: 49vh;">
+                <div class="fillbar" id="progressbar"></div>
+              </div>
+            </div>
+              <hr style="border: 0.5vh solid #ec5b6c; margin-left: 5vh; margin-right: 0; transform: skew(-30deg);">
+              <div class="part2">
+                    <h1>Digital skills</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, iure! Minus non dolore voluptate! Suscipit, sed ab ad dolore illo eos commodi doloremque, veniam recusandae, error perspiciatis tempora quia temporibus? Exercitationem debitis quis obcaecati perspiciatis minus veritatis ipsum consequatur. Ex?</p>
+              </div>
+            </div>
+          </div>
+          <div class="bktxtpersonal" id="txtaboutMe">
+          <div class="txtaboutMe" >
+            <div class="part1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quod. Enim illum, dolores perspiciatis voluptatum temporibus tempore vitae fugiat vero adipisci laboriosam non cumque harum quos. Ut soluta, doloribus unde, dolor sint corrupti eum ad neque quos quidem dolorum. Repudiandae?</p>
+            <hr style="border: 0.5vh solid #ec5b6c; margin-left: -15vw; margin-right: 30vh; margin-top: 5vh;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem impedit unde harum maxime consectetur saepe perspiciatis, doloribus quis blanditiis quae eligendi. Doloribus obcaecati magnam, dolorum expedita minus iure neque fugit voluptates eius atque sunt repudiandae sint magni harum sed perferendis fuga omnis cumque! Eum repellendus nostrum vel. Doloremque, deserunt!</p>
+          </div>
+          </div>
+          <div class="imagesprojects">
+            <div class="projectstitle">
+              <p style="float: left;">Project 1</p>
+              <p style="margin-left: 50%;">Project 2</p>
+            </div>
+              <div class="schoolproject1">
+
+              </div>
+              <div class="schoolproject2">
+                
+              </div>
+              <div class="schoolproject3">
+                
+              </div>
+              <div class="storyproject1">
+
+              </div>
+              <div class="storyproject2">
+                
+              </div>
+              <div class="storyproject3">
+                
+              </div>
+          </div>
+          </div>
+          <div class="neon-main" id="question">
+            <div class="neon-side">
+                <span class="txt" >What do you want to know about me?</span>
+                <span class="gradient"></span>
+                <span class="dodge"></span>
+            </div>
+        </div>
+          <a class="popup__closepersonal" href="#" onclick="closeall()">X</a>
+        </div>
+      </div>
+  </div>
+    <div class="popupvolunteering">
+        <a class="popupin" href="#popup">Volunteering</a>
+        <div class="popup" id="popup">
+          <div class="popup-inner">
+            <div class="volunteeringimg">
+            <img src="imagini/volunteeringme.jpg" alt="" class="imagpositioning"></div>
+            <div class="volunteeringtxt">
+              <h1>Story</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus qui iure explicabo minima cum sit pariatur tempora accusamus ex dolorum culpa modi, aliquam labore optio dolorem eum molestias sequi omnis!</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut mollitia quaerat at autem ipsam ratione dicta, assumenda et pariatur ad repellat tenetur. Minima quam quod quis, officiis consequatur aperiam nulla!</p>
+            </div>
+            <section class="page">
+              <section>
+                <ul class="tabs-controls">
+                  <li class="tabs-controlsitem">
+                    <button class="tabs-controls-link tabs-controls-link-active" data-id="1">1</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="2">2</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="3">3</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="4">4</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="5">5</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="6">6</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="7">7</button>
+                  </li>
+                  <li class="tabs-controls-item">
+                    <button class="tabs-controls-link" data-id="8">8</button>
+                  </li>
+                </ul>
+              </section>
+              <section class="cards-container">
+                <div class="card card-current" id="1">
+                  <img src="imagini/volunteer.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="2">
+                  <img src="imagini/certificates/img2.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="3">
+                  <img src="imagini/certificates/img3.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="4">
+                  <img src="imagini/certificates/img4.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="5">
+                  <img src="imagini/certificates/img5.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="6">
+                  <img src="imagini/certificates/img6.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="7">
+                  <img src="imagini/certificates/img7.jpg" alt="" class="imagpositioning">
+                </div>
+                <div class="card" id="8">
+                  <img src="imagini/certificates/img1.jpg" alt="" class="imagpositioning">
+                </div>
+              </section>
+            </section>
+            <a class="popup__close" href="#">X</a>
+          </div>
+        </div>
+    </div>
+    <div class="popupdegreeinf">
+        <a class="popupindegree" href="#popupdegree">Certificates</a>
+        <div class="popupdegree" id="popupdegree">
+          <div class="popup-innerdegree">
+            <h1>Hover over the image</h1>
+            <div class="rotatingimg">
+              <span style="--i:1;"> <img src="imagini/certificates/img1.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:2;"> <img src="imagini/certificates/img2.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:3;"> <img src="imagini/certificates/img3.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:4;"> <img src="imagini/certificates/img4.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:5;"> <img src="imagini/certificates/img5.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:6;"> <img src="imagini/certificates/img6.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:7;"> <img src="imagini/certificates/img7.jpg" alt="" class="imagpositioning"></span>
+              <span style="--i:8;"> <img src="imagini/certificates/img8.jpg" alt="" class="imagpositioning"></span>
+            </div>
+            <a class="popup__closedegree" href="#">X</a>
+          </div>
+        </div>
+    </div>
+    <!-- BACKGROUND -->
+    <canvas id="canvas1"></canvas>
+    <script src="js/canvas.js"></script></div>
+    <div class="mainloading" id="hideMe">
+      <div class="loading">
+        <div class="finger finger-1">
+          <div class="finger-item">
+            <span></span>
+            <i></i>
+          </div>
+        </div>
+        <div class="finger finger-2">
+          <div class="finger-item">
+            <span></span>
+            <i></i>
+          </div>
+        </div>
+        <div class="finger finger-3">
+          <div class="finger-item">
+            <span></span>
+            <i></i>
+          </div>
+        </div>
+        <div class="finger finger-4">
+          <div class="finger-item">
+            <span></span>
+            <i></i>
+          </div>
+        </div>
+        <div class="last-finger">
+          <div class="last-finger-item">
+            <span></span>
+            <i></i>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    font-family: Cambria, serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.page{
+    width: 100%;
+}
+
+.spaces{
+    height: 100vh;
+    background: #aa9587;
+    /* background-color: #7e7772; */
+}
+
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    z-index:999999;
+    margin-top: -8rem;
+}
+ul#navigation li {
+    display:inline;
+    float:left;
+    width:9rem;
+    margin-left:0.2rem;
+    overflow: hidden;
+}
+
+ul#navigation li a {
+    display: block;
+    font-weight:bold;
+    text-shadow:0.1rem 0.1rem 0.1rem #fff;
+    float:left;
+    width: 8rem;
+    height: 17rem;
+    color:#603d05;
+    background:transparent url(../img/item.png) no-repeat bottom right;
+    text-decoration:none;
+    text-align:center;
+    padding-top: 13rem;
+    margin-top: -2rem;
+    cursor:pointer;
+}
+
+.buttonnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+.navbaropen{
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    text-decoration: none;
+    outline: 0;
+}
+
+button:focus{outline: 0;}
+
+.navonscroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+  transition: all 0.7s ease;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+.menunav{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}

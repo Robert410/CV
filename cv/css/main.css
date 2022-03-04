@@ -1,0 +1,240 @@
+.projectsh1{
+    position: relative;
+    top: 0;
+    left: 0;
+	font-size:3rem;
+	margin:2rem;
+	color:#333;
+}
+
+.volh1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}
+
+.logoi{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0.2rem;
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(-30deg);
+    z-index: 99999999;
+}
+
+.imgpoz{
+    width: 100%;
+    height: 100%;
+}
+
+.centercontact{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    text-align: center;
+}
+
+.centercontact h4{
+    font-size: 1.3rem;
+}
+
+#contentmain{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 80%;
+    background:transparent url(../img/bg.gif) no-repeat bottom left;
+    transform: rotate(10deg);
+    margin-left: -10rem;
+    margin-top: -5rem;
+}
+
+#contentmain h1{
+    color:#7F6137;
+    text-shadow:1px 1px 1px #fff;
+    padding-top: 11rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#contentmain p{
+    width: 90%;
+    padding-left: 8rem;
+    padding-top: 18rem;
+    text-indent: 2rem;
+    
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 3.8rem;
+    width: 3.8rem;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15rem;
+    cursor: pointer;
+    box-shadow: 0px 1rem 1rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    text-align: left;
+    align-items: center;    
+    margin-left: 2rem;
+    margin-top: 4rem;
+  }
+  .wrapper .button:hover{
+    width: 12rem;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 3.8rem;
+    width: 3.8rem;
+    text-align: center;
+    border-radius: 15rem;
+    box-sizing: border-box;
+    line-height: 3.8rem;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #333;
+  }
+  .wrapper .button:nth-child(5):hover .icon{
+    background: #ff0000;
+  }
+  .wrapper .button .icon i{
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .wrapper .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #333;
+  }
+  .wrapper .button:nth-child(5) span{
+    color: #ff0000;
+  }
+
+  
+
+@media only screen and (max-width: 721px) {
+    body {
+      width: 100%!important;
+    }
+    ul#navigation{
+        display: none;
+    }
+    .navbaropen{
+        opacity: 1;
+        display: block;
+    }
+    .grid--xrayimg .grid__img{
+        width: 7rem;
+        height: 12rem;
+    }
+    .textcurve{
+        font-size: 4rem;
+    }
+    .scroll-img {
+        width: 15rem;
+        height: 5rem;
+    }
+    .grid__item:nth-child(odd) {
+        align-self: baseline;
+    }
+    .grid__item:nth-child(even) {
+        margin-top: 10rem;
+        margin-left: -10rem;
+    }
+    .grid{
+        padding: 10rem 0 5rem 0;
+    }
+    #contentmain{
+        opacity: 0;
+    }
+    .grid__item-title{
+        font-size: 1rem;
+        color: white;
+        padding: 0rem;
+    }
+    .volh1{
+        font-size: 1rem;
+    }
+    .grid__item-description{
+        margin-top: 0.1rem;
+        margin-bottom: 8rem;
+    }
+    .grid__item-titlewrap{
+        padding-top: 15rem;
+    }
+    .grid__item{
+        padding-top: 1rem;
+    }
+    .phonerez{
+        padding-top: 3rem;
+    }
+    .menu__item{
+        font-size: 190%!important;
+    }
+    .wrapper .button{
+    height: 3.2rem!important;
+    width: 3.2rem!important; 
+    margin-left: 1rem!important;
+    margin-top: 2rem!important;
+    }
+    .wrapper .button .icon{
+      width: 3rem;
+      height: 3rem;
+    }
+}
+
+.resumeclass{
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  font-size: 150%; 
+  margin-top: 1rem; 
+  border: gray 0.15rem solid;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: 550;
+  letter-spacing: 0.2rem;
+  padding: 0.2rem;
+}

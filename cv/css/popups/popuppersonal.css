@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    border: 0;
+    font-family: "Raleway", sans-serif;
+    overflow: hidden;
+}
+.popuppersonalinf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.popupinpersonal {
+    position: absolute;
+    left: 30vw;
+    top: 71vh;
+    text-decoration: none;
+    font-weight: 1000;
+    text-transform: uppercase;
+    border-radius: 2.5rem 0.2rem 2.5rem 0.2rem;
+    background-color: #E28A50;
+    color: white;
+    padding: 1rem 0.7rem;
+    z-index: 1;
+    animation: fadeinsite 2s ease forwards;
+    width: 15%;
+    height: 7%;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.popuppersonal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.64s ease-in-out;
+}
+
+.popup-innerpersonal {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: #141414;
+    transform: rotate(32deg);
+    transition: 0.64s ease-in-out;
+    z-index: 2;
+}
+.popuppersonal:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popuppersonal:target .popup-innerpersonal {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+}
+.popup__closepersonal {
+    position: fixed;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0a0a0a;
+    z-index: 3;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.neon-main {
+    height: auto;
+    position: absolute;
+    top: 42vh;
+    left: 18vw;
+    opacity: 0.6;
+  }
+  .neon-side .txt {
+    color: #ffffff;
+    background: -webkit-linear-gradient(top, #161616 0%, #1f1f1f 100%);
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+  }
+  .neon-side .txt::before {
+    content: 'What do you want to know about me?';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+  }
+  .neon-side {
+    display:inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+  }
+  .neon-side .gradient{
+    background: linear-gradient(114.5793141156962deg,rgb(122, 103, 81) ,  rgb(194, 133, 84),rgb(206, 161, 111) );
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    mix-blend-mode: multiply;
+  }
+  .neon-side .dodge {
+    background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+    position: absolute;
+    top:-100%;
+    left:-100%;
+    right:0;
+    bottom:0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 4s linear infinite;
+    opacity: 0.2;
+  }
+  @keyframes dodge-area {
+    to {
+        transform: translate(50%,50%);
+    }
+  }
+
+.personalcontainer{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+  }
+
+.personalinfspace{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+.personalcontainer p{
+      color: white;
+      text-indent: 3vh;
+
+  }
+.personalcontainer h1{
+    color: white;
+    text-indent: 3vh;
+}
+
+.personalscroll{
+    position: absolute;
+    right: 0;
+    width: 10vw;
+    height: 5vh;
+    background: white;
+    color: red;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.navbarpersonal{
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
+  right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarpersonal button{
+  width: 12vw;
+  height: 7vh;
+  background: white;
+  color: white;
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(top, #161616 0%, #1f1f1f 100%);
+  border-radius: 1%;
+  outline: 0;
+  right: 0;
+}
+
+.statusbutton{
+  background: #fff;
+  border-radius: 50%; 
+  width: 1vh;
+  height: 1vh;
+  right: 0;
+}
+
+.buttonnavbar{
+  display: inline-flex;
+  width: 15vw;
+  margin-top: 3vh;
+}
+
+.bktxtpersonal{
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  top: 15vh;
+  height: 55vh;
+  transform: skew(2deg);
+  z-index: 0;
+  background: linear-gradient(red,blue);
+  padding: 0.1vh;
+  padding-bottom: 1vh;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+
+.txteducation, .txtlanguage, .txtaboutMe{
+  position: fixed;
+  width: 100%;
+  height: 99.5%;
+  border: 0.1vh solid linear-gradient(red,blue);
+  background: black;
+  z-index: 6;
+  transform: skew(-2deg);
+  justify-content: center;
+  display: flex;
+}
+
+.txteducation p, .txtlanguage p, .txtaboutMe 
+  p{
+    color: white;
+    font-size: 2vh;
+    text-indent: 2vh;
+    margin: 10vh;
+    margin-bottom: 2vh;
+    margin-top: 1.5vh;
+}
+
+.txteducation h1, .txtlanguage h1, .txtaboutMe 
+  h1{
+    color: white;
+    font-size: 3.5vh;
+    margin-left: 12vh;
+    margin-top: 2vh;
+}
+
+.txteducation {
+  display: inline-flex;
+}
+
+.txteducation p{
+  margin-left: 10vw;
+  width: 90%;
+}
+
+.txteducation h2, .txtlanguage h2, .txtaboutMe 
+  h2{
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 15vh;
+    margin-top: 5vh;
+}
+
+.part1{
+  position: absolute;
+  left: 0;
+}
+
+.part2{
+  position: absolute;
+  margin-left: 23vw;
+  width: 40%;
+}
+
+.part2 h2{
+  color: white;
+  margin: 5vw;
+  font-size: 2.5vh;
+}
+
+.part2 p{
+  margin: 0;
+}
+
+.progressbar{
+  position: absolute;
+  top: 41vh;
+  left: 3vw;
+  width: 10vw;
+  height: 3vh;
+  border-radius: 40%;
+  background: white;
+}
+
+.fillbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background: red;
+  border-radius: 40% 10% 10% 40%;
+  animation: fillin 4s ease forwards;
+  overflow: hidden;
+}
+
+@keyframes fillin{
+    from{
+        left: -85%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes fadeinsite{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+.txtlanguage .part1 p{
+  margin-left: 10vw;
+}
+
+.txtlanguage .part1 h2{
+  margin-left: 5vw;
+}
+
+.txtlanguage .part1 h1{
+  margin: 3vw 0 0 13vw;
+}
+
+.results{
+  position: absolute;
+  top: 37vh;
+  left: -5vw;
+  width: 10vw;
+  font-size: 2vh;
+  color: rgb(133, 224, 224);
+}
+
+.txtlanguage .part2 h1{
+  margin: 1vw 0 0 1vw;
+}
+
+.txtlanguage p{
+  color: rgb(133, 224, 224);
+}
+
+.txtlanguage .englishword{
+  font-size: 3.5vh; color: rgb(133, 224, 224);
+  margin-bottom: 1vh;
+}
+
+.txtaboutMe .part1{
+  position: relative;
+  width: 40%;
+}
+
+.txtaboutMe .part1 p{
+  margin-left: -15vw;
+  width: 100%;
+  margin-right: 0;
+  margin-top: 6vh;
+}
+
+.imagesprojects{
+  position: fixed;
+  margin-left: 53%;
+  margin-top: 2%;
+  width: 45%;
+  height: 85%;
+  z-index: 10;
+  transform: skew(0deg);
+}
+
+.schoolproject1{
+  width: 35%;
+  height: 35%;
+  border: 0.2vh solid white;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.schoolproject2{
+  width: 35%;
+  height: 35%;
+  border: 0.2vh solid white;
+  margin-top: -5%;
+  margin-left: 16%;
+}
+
+.schoolproject3{
+  width: 35%;
+  height: 35%;
+  border: 0.2vh solid white;
+  margin-top: -5%;
+  margin-left: 5%;
+}
+.storyproject1{
+  width: 35%;
+  height: 35%;
+  border: 0.2vh solid white;
+  margin-top: -67%;
+  margin-left: 65%;
+}
+
+.storyproject2{
+  width: 35%;
+  height: 35%;
+  border: 0.2vh solid white;
+  margin-top: -5%;
+  margin-left: 53%;
+}
+
+.storyproject3{
+  width: 35%;
+  height: 35%;
+  border: 0.2vh solid white;
+  margin-top: -5%;
+  margin-left: 65%;
+}
+
+.imagesprojects .projectstitle p{
+  position: relative;
+  color: white;
+  font-size: 2.5vh;
+  margin-left: 10%;
+  height: 100%;
+}
+
+.projectstitle{
+  display: flex;
+  width: 100%;
+}
+
+.txtlanguage .part2 p{
+  color: white;
+  margin-top: 5%;
+  margin-right: 15%;
+}

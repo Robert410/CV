@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.rotatingimg{
+  position: absolute;
+  top: 23vh;
+  left: 33vw;
+  width: 15vw;
+  height: 15vw;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+  
+}
+
+@keyframes animate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.rotatingimg:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.rotatingimg span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.rotatingimg span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rotatingimg span img:hover{
+  transform: scale(1.6);
+  transition: all 300ms;
+}

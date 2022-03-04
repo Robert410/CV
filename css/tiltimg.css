@@ -1,0 +1,70 @@
+
+@import url(http://fonts.googleapis.com/css?family=Questrial|Playfair+Display:400,700);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+
+.tilt {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.tilt__back,
+.tilt__front {
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tilt__back {
+	position: relative;
+}
+
+.tilt__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.gridimg {
+	position: absolute;
+	top: 5rem;
+	left: 5rem;
+	list-style: none;
+	padding: 3em 0 0 0;
+	margin: 0 auto;
+}
+
+.grid--xrayimg .grid__img {
+	width: 15rem;
+	height: 20rem;
+}
+
+.grid__img--border .tilt__back,
+.grid__img--border .tilt__front {
+	border: 0.2rem solid #333;
+}
+
+.grid__img--border .tilt {
+	overflow: visible;
+} 
