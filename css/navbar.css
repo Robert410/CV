@@ -12,6 +12,7 @@ html {
 }
 
 .spaces{
+    position: relative;
     height: 100vh;
     background: #afb6bc;
 }

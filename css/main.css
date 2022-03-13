@@ -33,15 +33,13 @@ color:#333;
 }
 
 .centercontact{
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 5%;
   text-align: center;
 }
 
+.centercontact > .page-home{
+  text-align: justify;
+  margin-left: 10vw;
+}
 .centercontact h4{
   font-size: 1.3rem;
 }
@@ -52,15 +50,44 @@ color:#333;
   transform: translateX(-50%);
   width: 50%;
   height: 80%;
-  background:transparent url(../img/bg.gif) no-repeat bottom left;
+  background:transparent url(../img/bg.gif) no-repeat;
+  background-size:100% 100%;
   transform: rotate(10deg);
-  margin-left: -10rem;
   margin-top: -5rem;
+}
+
+#contentmain h1{
+  font-size: 1.5rem;
+  /* margin-left:1vw; */
 }
 .paragraphs{
 position: relative;
-top: 15vh;
-width: 60%;
+top: 15%;
+width: 100%;
+height: 80%;
+}
+
+.aboutmeText{
+  height: 60%;
+  width: 90%;
+  margin-top: 3rem;
+  overflow-y: scroll;
+}
+
+.aboutmeText::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+
+}
+
+.aboutmeText::-webkit-scrollbar-thumb {
+  background-color: #f90a23;
+  background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+.aboutmeText::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
 }
 
 #contentmain h1{
@@ -226,4 +253,53 @@ a {
   margin-left: 1rem!important;
   margin-top: 2rem!important;
   }
+}
+
+.test{
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  height: 1%;
+  z-index: 10;
+
+}
+
+.footerPage{
+  position: fixed;
+  bottom: 0;
+  background-color: gray;
+  width: 100%;
+  height: 5vh;
+  font-size: 1.5rem;
+}
+.typewriter{
+  position: fixed;
+  bottom: 0;
+  height: 5vh;
+  right: 0;
+  background-color: gray;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 1.5rem;
+  
+  animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 180% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
 }
